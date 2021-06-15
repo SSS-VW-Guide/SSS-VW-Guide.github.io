@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			body {
+				background-image:url(https://www.photos-public-domain.com/wp-content/uploads/2012/05/white-paper-texture.jpg);				
+				background-repeat: repeat-y;
+			}
+			h1 {
+				color: blue;
+			}
+			img {
+				height: 70px;
+				float: left;
+				margin-right: 10px;
+				padding-left: 10px;
+			}
+			.main {
+				background-color: white;
+				border:1px solid black;
+				padding: 10px;
+			}
+			#company {
+				color:blue;
+				width: 600px;
+			}
+			#company > *:not(img) {
+				padding: 0px;
+				margin-bottom: -20px;
+			}
+			#branch {
+				color: black;
+				width: 590px;
+				padding-right:10px;
+				}
+			#title {
+				background-color: blue;
+				color: yellow;
+				width: 600px;
+				<!-- margin-top: 55px; -->
+				border:1px solid black;
+				padding: 5px;
+			}
+			.topic {
+				background-color: brown;
+				color: white;
+				width: 600px;
+				margin: 20px 0 0;
+				padding: 10px;
+			}
+			#toc {
+				margin-bottom: 15px;
+				font-size: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class = "main">
+			<div id = "company">
+				<img src = 'https://www.unbox.ph/wp-content/uploads/2016/08/SSS_logo_PH.svg_.png'/>
+				<h1>SOCIAL SECURITY SYSTEM</h1>
+				<div id = "branch">
+					<h2>Kabankalan Branch</h2>
+				</div>
+				<br>
+			</div>
+		</div>
+		<br>
+		<div id = "title">
+			<h2>MEMBERS' GUIDE</h2>
+		</div>
+		<br>
+		<div id = 'toc'>
+			<h3>TABLE OF CONTENTS</h3>
+			<ul>			
+			<li><a href = "#toc">This is a list</a></li>
+			<li>This is a list</li>
+			<li>This is a list</li>
+			<li>This is a list</li>
+			<li>This is a list</li>
+			</ul>
+		</div>
+		<a href = "https://member.sss.gov.ph" target="_blank">SSS Members Website</a>
+		<div class = "topic">
+			ONLINE REGISTRATION
+		</div>	
+	</body>
+
+</html>

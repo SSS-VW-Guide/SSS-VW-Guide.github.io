@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			xxxximg {
+				height: 60px;
+				float: left;
+				margin-right: 10px;
+				padding-left: 20px;
+			}
+			#company {
+				background-color: white;
+			}
+			#company > *:not(img) {
+				padding: 0px;
+				margin-bottom: -20px;
+				color:blue;
+				width: 600px;
+			}
+			#branch {
+				color: black;
+				width: 590px;
+				padding-right:10px;
+				}
+			#title {
+				padding: 0 15px;
+				
+				background-color: blue;
+				color: yellow;
+				border:1px solid black;
+			}
+			#grid {
+				display: grid;
+				grid-template-areas:
+				'titlebar titlebar'
+				'sidebar content';
+
+				grid-gap: 7.5px;
+				padding: 15px;
+				width: 96vw;
+				height: 96vh;
+				
+				grid-template-columns: 250px auto;
+				grid-template-rows: 175px auto;
+			}
+			#titlebar {
+				grid-area: titlebar;
+				background-color: white;
+				padding: 0px;
+			}
+			#sidebar {
+				grid-area: sidebar;
+				color: white;
+				background-color: gray;
+				
+				padding: 0px 15px;
+				font-size: 18px;
+			}
+			#sidebar a
+			{
+				color: white;
+			}
+			#content {
+				grid-area: content;
+				background-color: white;
+				
+				overflow: scroll;
+				padding: 0 15px;
+				border: 1px solid black;
+				font-size: 16px;
+			}
+			body {
+				height; 100%;
+				background-image:url(https://www.photos-public-domain.com/wp-content/uploads/2012/05/white-paper-texture.jpg);				
+				background-repeat: repeat-y;
+				margin: 0;
+				padding: 0;
+			}
+			.pd {
+				text-align: center;
+			}
+			.topics {
+				margin-top: 5px;
+				padding: 2px;
+				border-radius: 5px;
+				border: 2px solid black;
+				font-size: 25px;
+				font-style: bold;
+				color: teal;
+			}
+		</style>
+	</head>
+	<body>
+		<div id = "grid">
+		<div id = "titlebar">
+			<div id = "company">
+				<img style="height: 60px; float: left; margin-right: 10px; padding-left: 20px;" src="https://www.unbox.ph/wp-content/uploads/2016/08/SSS_logo_PH.svg_.png"/>
+				<h1>SOCIAL SECURITY SYSTEM</h1>
+			</div>
+			<div id = "branch">
+				<h2>Kabankalan Branch</h2>
+			</div>
+			<div id = "title">
+				<h2>MEMBERS' GUIDE</h2>
+			</div>
+		</div>
+			<div id = 'sidebar'>
+				<h3>Table of Contents</h3>
+				<a href = "#register">Register in My.SSS</a><br>
+				<a href = "#unlock">Unlock Account</a><br>
+				<a href = "#maternity">Maternity Benefit</a><br>
+			</div>
+			<div id = 'content'>
+				<!-- REGISTER IN MY.SSS -->
+				<div id ="register">
+					<div class = "topics">
+						<b>REGISTER IN MY.SSS WEBSITE</b>
+					</div>
+				</div>
+				<p>1. Go to the SSS Website member portal at <a href = "https://member.sss.gov.ph" target="_blank">https://member.sss.gov.ph</a> </p>
+				<p>2. Click the <b>Not Yet Registered</b> in My.SSS text link.</p>
+				<p>3. Read the reminder, tick the box beside I certify and click <b>Proceed</b>.</p>
+				<p>4. Provide the required details; Registration preference (as applicable) :<p>
+				<ul>
+					<li>Savings Account number</li>
+					<li>Mobile Number - <i>if registered with SSS</i></li>
+					<li>UMID Card - <i>if with PIN number registered in SSS Info Kiosk</i></li>
+					<li>Employer ID number - <i>if employed</i></li>
+					<li>Payment Reference Number - <i>if self-employed / voluntary / OCW / Non-Working Spouse</i></li>
+					<li>Date of Last Loan</li>
+					<li>Transaction number shown in personal record</li>
+					<li>Check number of any monthly pension</li>
+				</ul>
+				<p>5. Tick the small box to accept the Terms of Service</p>
+				<p>6. Click <b>Submit</b></p>
+				<p>7. Open your email to check notification from SSS</p>
+				<p>8. Encode the Last 6 Digits of your SS number and click <b>Submit</b></p>
+				<p>9. Create password (Ex. Juandelacruz123)</p>
+				<p>10. Once done, you will be directed to the homepage of your My.SSS account.</p>
+				
+				<div class ="pd">
+					<img style="width: 400px; height: 100px;" src="https://pluspng.com/img-png/divider-png-hd-divider-5-png-640-160-640.png"/>
+				</div>
+				
+				<!-- UNLOCK ACCOUNT -->
+				<br><br><br><br><br>
+				<div id ="unlock">
+					<div class = "topics">
+						<b>UNLOCK ACCOUNT</b>
+					</div>
+				</div>
+				<p>To unlock your member web account, follow the steps below:</p>
+				<p>1. Go to the SSS Website member portal at <a href = "https://member.sss.gov.ph" target="_blank">https://member.sss.gov.ph</a> </p>
+				<p>2. Click the <b>Forgot user ID or password?</b> text link</p>
+				<p>3. You may select by clicking either of the two:</p>
+				<ul>
+					<li>My registered email address</li>
+					<li>Security Questions - <i>These questions were part of the registration process OR were asked during your previous logins.</i></li>
+				</ul>
+				<p>4. Enter your Common Reference Number (CRN) which can be found in the UMID card, OR your SSS number. For the captcha, enter the code you read on the box below it. Submit.</p>
+				<p>You will receive an email with a link to reset your password.  Check your INBOX and SPAM folders</p>
+				<p>Some of the reasons of unsuccessful web account reset request or why email message was not received from the SSS:</p>
+				<ul>
+					<li>email address is not the same with the one you provided on your online registration <//li>
+					<li>email address is inactive</li>
+				</ul>
+				<p>In case you can't remember the email address or the answers to the securty questions, you may send a request letter to onlineserviceassistance@sss.gov.ph. 
+				You may follow the sample letter below or you can make your own request letter with the same details. For identification purposes, attach a scanned copy of your SSS or UMID ID, or any two valid IDS:</p>
+				<ul>
+				<i>
+				Subject: Request to Reset Locked SSS Online Account
+				<br><br>
+				To whom it may concern:
+				<br><br>
+				I would like to request for the resetting of my SSS website account password since it was locked. Below are the details of my account:
+				<br><br>
+				Member Name: ________________<br>
+				SS ID Number: ________________<br>
+				Email Address: ________________<br>
+				<br>
+				Attached is a scanned copy of my identification card as proof of my identity.<br>
+				<br>
+				For more information, you may contact me at ________________.<br>
+				<br><br>
+				With appreciation,<br><br><br>
+				(signature over printed name)<br>
+				</i><br></ul>
+				<p><b>To change email address in your member web account</b>, follow the steps below:</p>
+				<p>1. Go to the SSS Website member portal at <a href = "https://member.sss.gov.ph" target="_blank">https://member.sss.gov.ph</a> </p>
+				<p>2. Login with your USERID and PASSWORD.</p>
+				<p>3. In the Main Menu, select <b>Member Info</b> and click the <b>Update Contact Info</b> text link.</p>
+				<p>4. Look for <b>Online Correction</b> and check Email Address. A new input box will appear to ask for your new email address. Click <b>Next</b> to proceed.</p>
+				<div class ="pd">
+					<img style="width: 400px; height: 100px;" src="https://pluspng.com/img-png/divider-png-hd-divider-5-png-640-160-640.png"/>
+				</div>
+				
+				<!-- MATERNITY BENEFIT -->
+				<br><br><br><br><br>
+				<div id ="maternity">
+					<div class = "topics">
+						<b>MATERNITY BENEFIT</b>
+					</div>
+				</div>
+
+				<p>To notify, submit the maternity notification through your SSS member online account at <a href = "https://member.sss.gov.ph" target="_blank">https://member.sss.gov.ph</a> or through the SSS Mobile App.</p>
+				<p>Documentary Requirements:</p>
+				<ul>
+				<li><a href = "https://www.sss.gov.ph/sss/DownloadContent?fileName=SIC_01243.pdf" target="_blank">Maternity Benefit Application form</a></li>
+				<li>Printed copy of Maternity Notification<l/i>
+				<li>Photocopy of duly registered Live Birth of Child</li>
+				<li>Photocopy of UMID/SSS ID or 2 valid ID Cards, affix signature to document</li>
+				<li>Enroll your preferred account in the Disbursement Account Enrollment Module at <a href = "https://member.sss.gov.ph" target="_blank">https://member.sss.gov.ph</a>. </li>
+				<li>For Solo Parent, submit a photocopy of your Solo Parent ID.</li>
+				<li>For miscarriage, submit the documents listed below:</li>
+				<ul>
+				- Pregnancy Test<br>
+				- Ultrasound result before and after miscarriage<br>
+				- Certified true copy of Operating Room Record<br>
+				- Histopathology or Biopsy Result<br>
+				</ul>
+				<li>For Separated Employees, request the following documents from your last employer:</li>
+				<ul>
+				- Certificate of Separation from your last employer<br>
+				- Certificate of Non-advance payment of Maternity Benefit from your last employer<br>
+				- Copy of L501 from your last employer<br>
+				- If none of the aboev are available, submit a notarized SSS form Affidavit of Undertaking for Maternity.<br>
+				</ul>
+				<li>For claimants who failed to submit the maternity notification, prepare and submit the following:</li>
+				<ul>
+				- Explanation letter for non-submission of maternity notification.<br>
+				- SSS Form Maternity Allocation Form.<br>
+				- Medical Certificate.<br>
+				</ul>
+<!--
+				<li>Maternity Benefit Claim for Employed Member</li>
+
+To notify, submit maternity notification through the employer web account at https://employer.sss.gov.ph/ or through the SSS Mobile App.
+
+Documentary Requirements:
+
+Maternity Reimbursement Application form
+Printed copy of Maternity Notification
+Photocopy of duly registered Live Birth of Child
+Photocopy of UMID/SSS ID or 2 valid ID Cards, affix signature to document.
+SSS Maternity Reimbursement Employer Transmittal List
+For Solo Parent, submit a photocopy of your Solo Parent ID.
+For miscarriage, submit the documents listed below:
+Pregnancy Test
+Ultrasound result before and after miscarriage
+Certified true copy of Operating Room Record
+Histopathology or Biopsy Result
+8.  For claimant who failed to submit the maternity notification:
+
+Explanation letter for non-submission of maternity notification
+SSS Form Maternity Allocation
+Medical Certificate
+Reminders:
+
+Fill-in all the required information and make sure to write legibly in all forms.
+Present original copy of documents for authentication. 
+Additional requirements may be required on a case by case basis. Claimants will be notified through text.
+-->
+
+			</div>
+		</div>
+	</body>
+</html>
